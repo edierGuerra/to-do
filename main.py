@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from routes.user_routes import route as user_route
 
 # Instancia de la api
 app = FastAPI(
@@ -11,3 +12,5 @@ app = FastAPI(
 @app.get("/")
 def root():
     return "Bienvenido a tu gestor de tareas"
+
+app.include_router(router= user_route)
