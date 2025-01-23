@@ -12,3 +12,4 @@ class User(Base):
     name:Mapped[str] = mapped_column(String(50),nullable=False)
     username:Mapped[str] = mapped_column(String(100),nullable=False,unique=True)
     email:Mapped[str] = mapped_column(String(50),nullable=False,unique=True)
+    password:Mapped[str] = mapped_column(String(250),nullable=False)
