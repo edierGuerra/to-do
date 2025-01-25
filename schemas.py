@@ -4,11 +4,14 @@ class UserModel(BaseModel):
     name:str 
     username:str
     email:EmailStr
+    password:str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class CreateUserResponse(BaseModel):
     name:str
     username:str
     email:EmailStr
+    password:str
+
