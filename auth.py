@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from models import User
 from datetime import datetime, timedelta
 
-oauth2_schema = OAuth2PasswordBearer(tokenUrl="user/token")
+oauth2_schema = OAuth2PasswordBearer(tokenUrl="/api/v1/user/token")
 
 # Crea un token
 def encode_token(payload: dict):
