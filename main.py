@@ -12,7 +12,7 @@ app = FastAPI(
 # Ruta inicial
 @app.get("/")
 def root():
-    return "Bienvenido a tu gestor de tareas"
+    return {"message":"Bienvenido a tu gestor de tareas"}
 
 app.include_router(router= user_route)
 app.include_router(router= task_route)
