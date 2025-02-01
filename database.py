@@ -4,7 +4,7 @@ from models import Base
 from decouple import config
 
 # url de base de datos
-URL_DB = f"mysql+pymysql://{config("MySQL_USER")}:{config("MySQL_PASSWORD")}@{config("MySQL_HOST")}:3306/{config("MySQL_DB")}"
+URL_DB = f"mysql+pymysql://{config('MySQL_USER')}:{config('MySQL_PASSWORD')}@{config('MySQL_HOST')}:3306/{config('MySQL_DB')}"
 
 # Motor de base de datos 
 engine = create_engine(url=URL_DB,echo=True)
