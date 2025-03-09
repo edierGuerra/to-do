@@ -52,7 +52,7 @@
 2. **Instalar dependencias**: Ejecuta el siguiente comando para instalar las bibliotecas necesarias:
 
    ```bash
-   pip install tk pyqt5 twilio smtplib json sqlite3
+   pip install -r requirementes.txt
    ```
 
 ### **Clonar el Repositorio**
